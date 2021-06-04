@@ -1,0 +1,16 @@
+<HTML>
+  <head>
+    <title>Flask Template</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+
+    <BODY>
+        <h1>Flask Template</h1>
+        <h2>Title</h2>
+        <h3>Subtitle</h3>
+        <ul>
+            <li> <a href="{{ url_for('new') }}">Create new survey</a> </li>
+            <li> <a href="{{ url_for('survey') }}">Take the most recent survey</a> </li>
+          </ul>
+    </BODY>
+</HTML>
